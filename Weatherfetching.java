@@ -7,9 +7,6 @@ import okhttp3.Response;
 import java.io.IOException;
 import java.util.Scanner;
 
-/**
- * WeatherApp: Fetches and displays weather data for a given city using OpenWeatherMap API.
- */
 public class WeatherApp {
     private static final String API_URL = "https://api.openweathermap.org/data/2.5/weather";
     private static final String API_KEY = "YOUR_API_KEY"; // Replace with a valid API key
@@ -33,13 +30,7 @@ public class WeatherApp {
         }
     }
 
-    /**
-     * Fetches weather data for the given city using OpenWeatherMap API.
-     *
-     * @param city the city name
-     * @return the JSON response as a string
-     * @throws IOException if an error occurs during the HTTP request
-     */
+    
     private static String fetchWeatherData(String city) throws IOException {
         OkHttpClient client = new OkHttpClient();
 
@@ -59,11 +50,7 @@ public class WeatherApp {
         }
     }
 
-    /**
-     * Parses and displays weather data from the JSON response.
-     *
-     * @param jsonResponse the JSON response
-     */
+    
     private static void displayWeatherData(String jsonResponse) {
         JsonObject jsonObject = JsonParser.parseString(jsonResponse).getAsJsonObject();
 
