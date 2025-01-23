@@ -1,4 +1,4 @@
-# Weather-fetching
+# Rest API Client
 
 COMPANY: CODTECH IT SOLUTION                                                               
 NAME: VISHVESHWARAN S                                           
